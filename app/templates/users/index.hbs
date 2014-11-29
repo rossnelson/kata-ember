@@ -1,0 +1,13 @@
+<div class="panel">
+  <ul>
+    {{#each}}
+      <li>
+        {{#link-to 'user' this}}
+          {{email}}
+        {{/link-to}}
+      </li>
+    {{else}}
+      <li>No Users found.</li>
+    {{/each}}
+  </ul>
+</div>
