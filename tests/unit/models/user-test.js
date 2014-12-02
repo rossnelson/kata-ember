@@ -13,3 +13,4 @@ test('it exists', function() {
   // var store = this.store();
   ok(!!model);
 });
+

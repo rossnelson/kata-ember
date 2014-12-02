@@ -1,0 +1,58 @@
+.navigation
+  background: #28303B
+  width: 15%
+  float: left
+  min-height: 100%
+  color: #fff
+
+  .title
+    margin-bottom: 10px
+
+  h1, h2, h3, h4, h5, h6, a
+    padding: 5%;
+    color: #fff
+    text-decoration: none
+
+  ul
+    li
+      margin: 0
+    a
+      color: #4B535E
+      background: #A0A9B7
+      display: block
+      width: 100%
+      border-bottom: 1px solid lighten(#4B535E, 25%)
+      padding: 5%
+
+@media (max-width: 1000px)
+  .navigation
+    width: 100%
+    min-height: 0
+    h1, h2, h3, h4, h5, h6, a
+      float: left
+    .title
+      line-height: 40px
+      padding: 0 10px
+      margin: 0
+
+
+    .links
+      overflow: hidden
+      float: right
+      margin: 0
+      li
+        float: left
+      a
+        border: none
+        border-right: 1px solid lighten(#4B535E, 25%)
+        line-height: 40px
+        padding: 0 15px
+        margin: 0
+
+  
+@media (max-width: 600px)
+  .navigation
+    .links
+      width: 100%
+      background: #A0A9B7
+

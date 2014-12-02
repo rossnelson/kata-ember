@@ -1,18 +1,11 @@
 
 <div class="panel">
-  <h1>{{email}}</h1>
+  <h1>{{name}}</h1>
 
   <p>
     Updated at: {{formatted-date updatedAt 'MMMM Do, YYYY [at] h:mm a'}}
     <br>
     Created at: {{formatted-date createdAt 'MMMM Do, YYYY [at] h:mm a'}}
   </p>
-
-  {{#link-to "user.edit" this}}Edit User{{/link-to}}
-
-  {{outlet}}
-
 </div>
-
-
 

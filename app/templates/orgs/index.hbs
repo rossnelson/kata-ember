@@ -2,14 +2,13 @@
   <ul>
     {{#each}}
       <li>
-        {{#link-to 'users.show' this}}
-          {{email}}
+        {{#link-to 'org' this}}
+        {{translated-level type}} {{name}}
         {{/link-to}}
       </li>
     {{else}}
-      <li>No Users found.</li>
+      <li>No Orgs found.</li>
     {{/each}}
   </ul>
-
-  {{outlet}}
 </div>
+

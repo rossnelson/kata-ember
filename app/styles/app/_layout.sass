@@ -6,38 +6,34 @@ html, .ember-application, .ember-view
   font-family: 'Domine', serif
   color: #787D85
 
+  @media (max-width: 1000px)
+    background: #EBF0F2
+
 h1, h2, h3, h4, h5, h6
   font-family: 'Montserrat', sans-serif
 
-.navigation
-  background: #28303B
-  width: 15%
-  float: left
-  min-height: 100%
-  color: #fff
+img
+  max-width: 100%
+  height: auto
 
-  .title
-    margin-bottom: 10px
-
-  h1, h2, h3, h4, h5, h6, a
-    padding: 5%;
-    color: #fff
-    text-decoration: none
-
-  ul
-    li
-      margin: 0
-    a
-      color: #4B535E
-      background: #A0A9B7
-      display: block
-      width: 100%
-      border-bottom: 1px solid lighten(#4B535E, 25%)
-      padding: 5%
 
 .panel
   width: 85%
-  padding: 10%
+  padding: 20px 5%
   float: left
   height: 100%
   background: #EBF0F2
+  overflow: scroll
+
+  @media (max-width: 1000px)
+    width: 100%
+    height: auto
+
+.box
+  width: 30%
+  padding: 10px 10px 10px 45px
+  float: left
+  margin: 7px
+  background: #A0A9B7
+  border-radius: 3px
+  box-shadow: 1px 1px 0 #8892A0

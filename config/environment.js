@@ -25,6 +25,16 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV.contentSecurityPolicy = {
+      'default-src': "'none'",
+      //'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
+      'font-src': "'self' data: fonts.gstatic.com",
+      'connect-src': "'self' kata.simian.us",
+      'img-src': "'self' www.facebook.com f.cl.ly cl.ly",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
+      //'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
+    }
   }
 
   if (environment === 'test') {
